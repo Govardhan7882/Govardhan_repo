@@ -7,13 +7,16 @@ Date:17March2026
 comment
 
 # update the system before installing further
+echo "updating the system"
  yum update -y
 
  #install java 21 version
+ echo "installing java"
 
  yum install java-21-openjdk-devel -y
 
  # install tree, unzip, wget and git
+ echo "installing tree, wget and git
 
  yum install tree unzip wget git -y
 
@@ -22,10 +25,13 @@ comment
  cd /opt/
 
  #installing the maven
+ echo " installing maven"
 
  wget https://dlcdn.apache.org/maven/maven-3/3.9.14/binaries/apache-maven-3.9.14-bin.zip
  
 # unzipping the maven installation zip file
+
+echo "unzipping the maven installation zip file
 
  unzip apache-maven-3.9.14-bin.zip
 
@@ -37,7 +43,7 @@ maven_path="/opt/apache-maven-3.9.14"
 
 echo "" >> ~/.bash_profile
 echo "export M2_HOME=$maven_path" >> ~/.bash_profile
-echo "export PATH=$PATH:$M2_HOME/bin" >> ~/.bash_profile
+echo "export PATH=\$PATH:\$M2_HOME/bin" >> ~/.bash_profile
 
 # reload the bash_profile file
 source ~/.bash_profile
