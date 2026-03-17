@@ -29,6 +29,8 @@ comment
 
  unzip apache-maven-3.9.14-bin.zip
 
+ rm -rf apache-maven-3.9.14-bin.zip
+
 #Set the class path/Environmental Variable
 
 maven_path="/opt/apache-maven-3.9.14"
