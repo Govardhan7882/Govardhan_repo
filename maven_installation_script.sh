@@ -6,7 +6,7 @@ author:Govardhan
 Date:17March2026
 comment
 
-# update the system before installing the system
+# update the system before installing further
  yum update -y
 
  #install java 21 version
