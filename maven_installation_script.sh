@@ -31,7 +31,7 @@ echo "updating the system"
  
 # unzipping the maven installation zip file
 
-echo "unzipping the maven installation zip file
+echo "unzipping the maven installation zip file"
 
  unzip apache-maven-3.9.14-bin.zip
 
@@ -46,6 +46,7 @@ echo "export M2_HOME=$maven_path" >> ~/.bash_profile
 echo "export PATH=\$PATH:\$M2_HOME/bin" >> ~/.bash_profile
 
 # reload the bash_profile file
+
 source ~/.bash_profile
 
 echo "maven enviornment variables added successfully"
