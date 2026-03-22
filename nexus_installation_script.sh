@@ -14,6 +14,10 @@ sudo rpm --import https://yum.corretto.aws/corretto.key
 sudo curl -Lo /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo
 sudo yum install -y java-1.8.0-amazon-corretto-devel --nogpgcheck
 
+#installing tree,wget,unzip,tar,git
+
+yum install tree wget unzip git tar -y
+
 java -version
 
 #installing nexus in /opt/
@@ -29,9 +33,6 @@ tar -zxvf nexus-3.70.1-02-java8-unix.tar.gz
 mv /opt/nexus-3.70.1-02 /opt/nexus
 
 
-#installing tree,wget,unzip,tar,git
-
-yum install tree wget unzip git tar -y
 
 #create a dedicated user
 useradd nexus
@@ -39,9 +40,8 @@ echo 'nexus   ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers
 chown -R nexus:nexus /opt/nexus
 chown -R nexus:nexus /opt/sonatype-work
 
-###############end of the script###########################################################################################
-
 chmod -R 775 /opt/nexus
 chmod -R 775 /opt/sonatype-work
 
+#####################end of the script############################################
 
