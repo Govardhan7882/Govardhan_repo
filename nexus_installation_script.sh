@@ -39,6 +39,8 @@ echo 'nexus   ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers
 chown -R nexus:nexus /opt/nexus
 chown -R nexus:nexus /opt/sonatype-work
 
+###############end of the script###########################################################################################
+
 chmod -R 775 /opt/nexus
 chmod -R 775 /opt/sonatype-work
 
