@@ -37,6 +37,11 @@ echo "unzipping the maven installation zip file"
 
  rm -rf apache-maven-3.9.14-bin.zip
 
+ #cloning the git repository
+ echo "cloning the git repository"
+ 
+ git clone https://github.com/kkdevopsb8/maven-webapplication-project-kkfunda.git
+
 #Set the class path/Environmental Variable
 
 maven_path="/opt/apache-maven-3.9.14"
@@ -44,18 +49,12 @@ maven_path="/opt/apache-maven-3.9.14"
 echo "" >> ~/.bash_profile
 echo "export M2_HOME=$maven_path" >> ~/.bash_profile
 echo "export PATH=\$PATH:\$M2_HOME/bin" >> ~/.bash_profile
-
-# reload the bash_profile file
-
-source ~/.bash_profile
-
 echo "maven enviornment variables added successfully"
 echo "M2_HOME=$M2_HOME"
 
+# reload the bash_profile file
+source ~/.bash_profile
 
-cd /opt/
-
-git clone https://github.com/kkdevopsb8/maven-webapplication-project-kkfunda.git
 
 #########END OF THE SCRIPT#######################################
 
