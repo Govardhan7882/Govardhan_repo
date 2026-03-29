@@ -29,7 +29,7 @@ systemctl daemon-reload
 
 #enable the jenkins
 
-systemctl enbale jenkins
+systemctl enable jenkins
 
 #start the jenkins
 echo "starting the jenkins"
