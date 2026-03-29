@@ -1,0 +1,43 @@
+#!/bin/bash
+
+<<comment
+script:jenkins_installation_script
+script_created_by:Govardhan
+comment
+
+#installing wget,git,unzip and tree
+
+echo "installing wget git unzip tree"
+yum install wget git unzip tree -y
+
+#installing jenkins
+
+wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+
+yum upgrade
+
+# Add required dependencies for the jenkins package
+echo "installing the java21"
+
+yum install fontconfig java-21-openjdk -y
+echo "installing jenkins"
+yum install jenkins -y
+#reload the daemon
+systemctl daemon-reload
+
+#enable the jenkins
+
+systemctl enbale jenkins
+
+#start the jenkins
+echo "starting the jenkins"
+systemctl start jenkins
+
+#status of jenkins
+
+systemctl status jenkins
+
+
+####################end of the script#########################################
