@@ -17,7 +17,7 @@ echo "installing the java"
 yum install java-21-openjdk-devel -y
 #install tree,git,wget, unzip
 echo "installing the tree, wget,,git and unzip"
-yum install tree wget git -y
+yum install tree wget git unzip -y
 
 cd /opt/
 
