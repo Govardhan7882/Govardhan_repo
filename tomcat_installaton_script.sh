@@ -23,19 +23,19 @@ cd /opt/
 
 # downloading the tomcat zip file using the wget command
 
-wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.115/bin/apache-tomcat-9.0.115.zip
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.117/bin/apache-tomcat-9.0.117.zip
 
 #unzipping the file
 echo "unzipping the zip file"
-unzip apache-tomcat-9.0.115.zip
+unzip apache-tomcat-9.0.117.zip
 
 #removing the zip file 
 echo "remvoing the zip file"
 
-rm -rf apache-tomcat-9.0.115.zip
+rm -rf apache-tomcat-9.0.117.zip
 
 # updating the execute permissions for start and stop shell scripts
-cd /opt/apache-tomcat-9.0.115/bin
+cd /opt/apache-tomcat-9.0.117/bin
 chmod u+x *.sh
 
 ###################end of the script #################################################################
