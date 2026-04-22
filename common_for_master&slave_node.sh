@@ -57,8 +57,8 @@ apt-get install containerd.io -y
 
 # Generate default configuration file for containerd
 
-Note: Containerd uses a configuration file located in /etc/containerd/config.toml for specifying daemon level options.
-The default configuration can be generated via below command.
+####Note: Containerd uses a configuration file located in /etc/containerd/config.toml for specifying daemon level options.
+#####The default configuration can be generated via below command.
 
 containerd config default > /etc/containerd/config.toml
 
