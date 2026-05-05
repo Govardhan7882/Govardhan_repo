@@ -76,7 +76,7 @@ systemctl enable containerd
 
 ## Update the apt package index and install packages needed to use the Kubernetes apt repository:
 
-apt-get update
+apt-get update -y
 apt-get install -y apt-transport-https ca-certificates curl
 
 # Download the Google Cloud public signing key:
@@ -117,6 +117,9 @@ conntrack -V
 
 
 ##==========End of the script ====##
+
+##to install calico
+##kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.3/manifests/calico.yaml
 
 
 
